@@ -30,7 +30,7 @@ public class HelpDeskApplication {
 		admin.setPassword(passwordEncoder.encode("123"));
 		admin.setProfile(ProfileEnum.ROLE_ADMIN);
 
-		User find = userRepository.findByEmail("marcelo.souza.81@hotmail.com");
+		User find = userRepository.findByEmail("admin@helpdesk.com");
 		if (find == null) {
 			userRepository.save(admin);
 		}
